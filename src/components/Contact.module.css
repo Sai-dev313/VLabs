@@ -1,0 +1,95 @@
+.contactSection {
+  background-color: var(--bg-secondary);
+}
+
+.wrapper {
+  display: flex;
+  gap: 4rem;
+  background: var(--bg-card);
+  border-radius: 24px;
+  padding: 4rem;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-lg);
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.ctaBtn {
+  align-self: flex-start;
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+}
+
+.contactInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.infoCard {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  color: var(--text-primary);
+}
+
+a.infoCard:hover {
+  transform: translateX(-10px);
+  border-color: var(--accent-primary);
+  box-shadow: 0 10px 20px rgba(255, 106, 26, 0.1);
+}
+
+.iconBox {
+  width: 50px;
+  height: 50px;
+  background: var(--gradient-orange);
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.infoText h4 {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.2rem;
+}
+
+.infoText p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    flex-direction: column;
+    padding: 2rem;
+  }
+}

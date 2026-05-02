@@ -1,0 +1,110 @@
+.pricingSection {
+  background-color: var(--bg-secondary);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.content {
+  flex: 1;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 500px;
+}
+
+.ctaBtn {
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+}
+
+.priceList {
+  flex: 1;
+  background: var(--bg-card);
+  border-radius: 24px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  width: 100%;
+}
+
+.listHeader {
+  background: var(--bg-secondary);
+  padding: 2rem;
+  border-bottom: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.listHeader h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.listHeader p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 2rem;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.2s ease;
+}
+
+.listItem:last-child {
+  border-bottom: none;
+}
+
+.listItem:hover {
+  background-color: var(--bg-primary);
+}
+
+.serviceName {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.checkIcon {
+  color: var(--accent-primary);
+}
+
+.priceValue {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  color: var(--text-primary);
+  background: var(--bg-secondary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 8px;
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}

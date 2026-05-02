@@ -1,0 +1,88 @@
+.footer {
+  background-color: var(--bg-primary);
+  border-top: 1px solid var(--border-color);
+  padding: 4rem 0 2rem;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.brand {
+  max-width: 400px;
+}
+
+.logoLink {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.logoImg {
+  height: 80px;
+  width: auto;
+  max-width: 300px;
+  object-fit: contain;
+}
+
+.tagline {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.links h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.links a {
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.links a:hover {
+  color: var(--accent-primary);
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-tertiary);
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.legal {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.legal span {
+  cursor: pointer;
+}
+
+.legal span:hover {
+  color: var(--accent-primary);
+}
+
+@media (max-width: 768px) {
+  .footerTop {
+    flex-direction: column;
+  }
+}
