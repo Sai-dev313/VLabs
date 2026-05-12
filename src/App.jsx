@@ -1,17 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import WhyDigitalize from './components/WhyDigitalize';
-import Services from './components/Services';
-import StatsBar from './components/StatsBar';
-import Portfolio from './components/Portfolio';
-import Testimonials from './components/Testimonials';
-import Pricing from './components/Pricing';
-import FAQ from './components/FAQ';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
+import Home from './pages/Home';
+import InquiryPage from './pages/InquiryPage';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -26,23 +19,17 @@ function App() {
   };
 
   return (
-    <div className="app-container">
-      <Navbar isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
-      <main>
-        <Hero />
-        <About />
-        <WhyDigitalize />
-        <Services />
-        <StatsBar />
-        <Portfolio />
-        <Testimonials />
-        <Pricing />
-        <FAQ />
-        <Contact />
-      </main>
-      <Footer />
-      <WhatsAppFloat />
-    </div>
+    <BrowserRouter>
+      <div className="app-container">
+        <Navbar isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/inquiry" element={<InquiryPage />} />
+        </Routes>
+        <Footer />
+        <WhatsAppFloat />
+      </div>
+    </BrowserRouter>
   );
 }
 
